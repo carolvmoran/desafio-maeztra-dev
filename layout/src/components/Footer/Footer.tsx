@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Newsletter } from "./Newsletter/Newsletter";
 import { MenuItems } from "./MenuInstitucional/menuItems";
 import { MenuItemsDrawer } from "./MenuInstitucional/menuItemsDrawer";
+import { SocialNetwork } from "./SocialNetwork/SocialNetwork";
 
 const Footer = () => {
   const device = window.innerWidth >= 1025 ? "desktop" : "mobile";
@@ -26,6 +27,7 @@ const Footer = () => {
       ) : (
         <MenuItemsDrawer device={device} />
       )}
+      <SocialNetwork />
     </footer>
   );
 };

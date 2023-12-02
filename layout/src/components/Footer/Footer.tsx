@@ -1,12 +1,12 @@
 import React from "react";
 
-// import { Header } from "../../Components/medioComponents/header/Header";
+import { Newsletter } from "./Newsletter/Newsletter";
 // import { Footer } from "../../Components/medioComponents/footer/Footer";
 
 const Footer = () => {
   return (
     <footer>
-      {/* <Header /> */}
+      <Newsletter />
       {/* <Footer /> */}
     </footer>
   );

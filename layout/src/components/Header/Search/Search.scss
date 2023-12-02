@@ -42,3 +42,20 @@
     cursor: pointer;
   }
 }
+.search-mobile {
+  &__drawer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 88px;
+    z-index: 99;
+    .search-bar__form {
+      width: 91%;
+    }
+  }
+}

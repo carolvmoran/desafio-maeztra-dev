@@ -8,7 +8,7 @@ export const items = [
   {
     id: 2,
     icon: true,
-    name: "Meus Favoritos",
+    name: "Favoritos",
     url: "",
   },
   {

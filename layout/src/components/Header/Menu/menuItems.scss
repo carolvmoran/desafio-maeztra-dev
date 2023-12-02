@@ -27,7 +27,8 @@
     align-items: center;
     justify-content: center;
   }
-  &__item1 {
+  &__item1,
+  &__item:hover {
     color: #faa500;
     font-weight: 700;
     gap: 8px;

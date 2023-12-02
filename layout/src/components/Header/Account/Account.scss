@@ -3,12 +3,19 @@
   align-items: center;
   justify-content: center;
   background: #fff;
+  &__desktop {
+    width: 26%;
+    min-width: 410px;
+  }
   &__desktop .account-items__container {
-    width: 84%;
+    width: 100%;
     max-width: 1598px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    .account-items__link {
+      width: 33%;
+    }
   }
   &__item {
     display: flex;
@@ -21,8 +28,14 @@
     font-weight: 400;
     line-height: 21px;
   }
-  &__item3 {
+  &__item3,
+  &__item:hover {
     border-radius: 8px;
-    border: 1px solid var(--color-1500-faa-500, #faa500);
+    border: 1px solid #faa500;
+  }
+  &__item3:hover {
+    border-radius: 8px;
+    background-color: #faa500;
+    color: #fff;
   }
 }

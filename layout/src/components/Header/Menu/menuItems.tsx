@@ -7,7 +7,8 @@ interface deviceProps {
   device: string;
 }
 
-const MenuItems = (device: deviceProps) => {
+const MenuItems = (props: deviceProps) => {
+  const { device } = props;
   return (
     <nav className={`${device && `menu-items__${device}`} menu-items`}>
       <ul className="menu-items__container">

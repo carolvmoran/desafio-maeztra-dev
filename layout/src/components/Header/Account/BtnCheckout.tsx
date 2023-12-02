@@ -8,7 +8,6 @@ interface deviceProps {
 }
 const BtnCheckout = (props: deviceProps) => {
   const { device } = props;
-  console.log(device, items);
   return (
     <>
       {items && items[2] ? (

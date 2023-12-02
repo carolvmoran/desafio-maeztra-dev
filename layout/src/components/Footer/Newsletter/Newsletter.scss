@@ -1,5 +1,6 @@
 .newsletter {
   width: 100%;
+  height: 120px;
   padding: 40px 0 42px 0;
   background: #fafafa;
   border-top: 2px solid #efefef;
@@ -15,10 +16,11 @@
     min-width: 952px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     @media (max-width: 1024px) {
       min-width: unset;
       flex-direction: column;
+      justify-content: center;
       width: 100%;
       gap: 8px;
     }

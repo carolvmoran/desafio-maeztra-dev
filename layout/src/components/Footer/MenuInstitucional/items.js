@@ -2,7 +2,7 @@ export const items = [
   {
     id: 1,
     name: "Informações",
-    itens: [
+    items: [
       {
         id: 1,
         nameItem: "Quem Somos",
@@ -28,7 +28,7 @@ export const items = [
   {
     id: 2,
     name: "Minha Conta",
-    itens: [
+    items: [
       {
         id: 1,
         nameItem: "Minha Conta",
@@ -49,7 +49,7 @@ export const items = [
   {
     id: 3,
     name: "Onde nos Encontrar",
-    itens: [
+    items: [
       {
         id: 1,
         nameItem: "Lojas",

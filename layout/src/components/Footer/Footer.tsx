@@ -1,13 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { Newsletter } from "./Newsletter/Newsletter";
-// import { Footer } from "../../Components/medioComponents/footer/Footer";
+import { MenuItems } from "./MenuInstitucional/menuItems";
+import { MenuItemsDrawer } from "./MenuInstitucional/menuItemsDrawer";
 
 const Footer = () => {
+  const device = window.innerWidth >= 1025 ? "desktop" : "mobile";
+  const [menuDevice, setMenuDevice] = useState(window.innerWidth >= 1025);
+  useEffect(() => {
+    const handleResize = () => {
+      setMenuDevice(window.innerWidth >= 1025);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
   return (
     <footer>
       <Newsletter />
-      {/* <Footer /> */}
+      {menuDevice ? (
+        <MenuItems device={device} />
+      ) : (
+        <MenuItemsDrawer device={device} />
+      )}
     </footer>
   );
 };

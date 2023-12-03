@@ -33,6 +33,8 @@ const CarouselProductCards = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: true,
+          arrows: false,
         },
       },
     ],
